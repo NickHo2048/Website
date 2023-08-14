@@ -1,0 +1,112 @@
+:root {
+    --indigo-500: #5c6ac4;
+    --indigo-100: #e0e7ff;
+    --yellow-500: #ecc94b;
+    --sky-100: #ebf8ff;
+    --slate-800: #1d1d1d;
+    --purple-700: #544b62;
+    --purple-800: #4d2f51;
+    --purple-900: #3a233d;
+    --gold-100: #ead9b4;
+    --gold-200: #9d8755;
+    --gray--800: #373633;
+    --gray--900: #21211e;
+}
+
+body {
+    overflow-y: scroll;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    background-image: url('/assets/img/background/frontPage.jpeg');
+    background-size: 45rem;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+h1 {
+    font-size: 4rem;
+    text-align: center;
+    font-weight: 700;
+    margin-bottom: 2rem;
+    margin-top: 4rem;
+    font-family: 'Macondo', Courier, monospace;
+    color: var(--gold-100);
+}
+
+html {
+    overflow-y: hidden;
+}
+
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: stretch;
+}
+
+@media (max-width: 1024px) {
+    .card-container {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+.card {
+    background-color: var(--purple-800);
+    padding: 10px;
+    margin: 10px;
+    max-width: 300px;
+    border-radius: 2rem;
+    flex-grow: 3 !important;
+    align-items: stretch;
+    display: flex;
+    flex-direction: column;
+}
+
+.label {
+    font-weight: bold;
+    font-size: 50px;
+    margin-bottom: 5px;
+    font-family: 'Macondo', Courier, monospace;
+    color: var(--gold-200);
+    text-align: center;
+}
+
+.card h3 {
+    font-family: 'Macondo', Courier, monospace;
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: var(--gold-100);
+    text-align: center;
+}
+
+.card p {
+    font-family: 'Macondo', Courier, monospace;
+    font-size: 1.1rem;
+    color: var(--gold-200);
+}
+
+.card img {
+    margin-top: auto;
+}
+
+#go-back-button {
+    background-color: var(--yellow-500);
+    color: var(--slate-800);
+    border-radius: 0.5rem;
+    padding: 1rem 2rem;
+    font-family: 'Macondo', Courier, monospace;
+    font-size: 1rem;
+    font-weight: 500;
+    cursor: pointer;
+    border: solid 1px var(--slate-800);
+    position: absolute;
+    bottom: 20px;
+}
+
+#go-back-button:hover {
+    background-color: var(--slate-800);
+    color: var(--yellow-500);
+    transition: background-color 0.5s ease;
+}

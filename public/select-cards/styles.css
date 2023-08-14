@@ -1,0 +1,70 @@
+/* select-cards.html */
+html {
+    background-color: var(--purple-700);
+    overflow-y: hidden;
+}
+
+body {
+    background: url('/assets/img/background/frontPage.jpeg');
+    background-size: 45rem;
+    width: auto;
+    height: 100%;
+}
+
+.select-cards-body {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.select-cards-title {
+    font-family: 'Macondo', Courier, monospace;
+    color: #ead9b4;
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+    text-align: center;
+    margin-top: 3.5rem;
+    font-weight: bold;
+}
+
+@media (max-width: 768px) {
+    .select-cards-title {
+        font-size: 1.3rem;
+    }
+}
+
+.cards-window {
+    background-color: var(--gray--800);
+    /* border: 1px solid red; */
+    max-width: 500px;
+    border-radius: 10px;
+}
+
+.cards-window::-webkit-scrollbar {
+    display: none;
+}
+
+@media (max-width: 768px) {
+    .cards-window {
+        margin-inline: 2rem;
+    }
+}
+
+.cards-container {
+    display: grid;
+    grid-template-columns: repeat(6, minmax(0, 1fr));
+    padding: 10px;
+    gap: 10px;
+}
+
+.tarot-card {
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+}
+
+.flipped {
+    transform: rotateY(180deg);
+}
