@@ -243,3 +243,19 @@ html {
 .resume {
     cursor: pointer;
 }
+
+/*.index-search {
+  display: none;
+  align-items: center;
+}
+
+.index-search.active {
+  display: flex;
+  align-items: center;
+} */
+
+
+/*#index-navbar {
+  justify-content: space-between;
+  align-items: center;
+}*/

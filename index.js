@@ -5,7 +5,14 @@ const dropdown = document.getElementById('Language');
 const toggleButton = document.getElementById('toggle-button');
 const emailIcon = document.getElementById("email-icon");
 const introTitle = document.querySelector('.intro-title');
+/*const searchButton = document.getElementById('search-button');
+const searchInput = document.getElementById('search-input');
+const indexSearch = document.querySelector('.index-search');
 
+searchButton.addEventListener('click', () => {
+    indexSearch.classList.toggle('active');
+    searchInput.focus(); 
+});*/
 
 emailIcon.addEventListener("click", function() {
     const emailAddress = "nickho.lv@gmail.com";

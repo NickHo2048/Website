@@ -1,0 +1,59 @@
+:root {
+    font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  }
+
+html {
+    margin: 0;
+    padding: 0;
+    height: 100%
+}
+
+.index-body {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100vw;
+    overflow-y: hidden;
+    
+    background-size: auto;
+}
+
+.index-navbar {
+    background-color: #383838;
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.8rem;
+    font-size: 15px;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 100;
+}
+
+.index-navbar a {
+    color: white;
+    text-decoration: underline;
+}
+
+.intro-container {
+    flex-grow: 1;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+}
+
+.intro-title {
+    
+    font-size: 20px;
+    font-weight: 40;
+    margin-bottom: 10rem;
+    margin-top: 10rem;
+    padding: 10rem;
+    font-family: 'Ariel';
+    color: rgb(255, 238, 55);
+}
